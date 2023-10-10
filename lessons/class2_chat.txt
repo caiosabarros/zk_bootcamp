@@ -1,0 +1,640 @@
+11:00:16 From Ben Taylor To Everyone:
+	gm
+11:00:20 From Ben Murison | OV To Everyone:
+	Yo
+11:00:23 From Noah Jelich To Everyone:
+	Ole
+11:00:28 From Alexandre Carvalheira To Everyone:
+	gm
+11:00:32 From Tajinder (Tony)Singh To Everyone:
+	gm
+11:00:36 From Noah Jelich To Everyone:
+	Kako ide?
+11:01:01 From Anuj Tanwar To Everyone:
+	Hi all
+11:01:15 From Carlo To Everyone:
+	Gm
+11:01:17 From Gabriel FOURNIER To Everyone:
+	gm
+11:01:21 From Mantas Stasauskas To Everyone:
+	gm
+11:11:02 From Thong Tran To Everyone:
+	sorry for being late. will my attendence be counted ?
+11:11:11 From Caio Barros To Everyone:
+	What's the threshold probability for a problem like this?
+11:11:20 From Caio Barros To Everyone:
+	Is there a good practice?
+11:11:40 From Anuj Tanwar To Everyone:
+	Reacted to "Is there a good pr..." with ⬆️
+11:11:46 From Marshall Gaucher To Everyone:
+	You have to zk prove your timestamp
+11:11:53 From Noah Jelich To Everyone:
+	Replying to "What's the thresho..."
+	
+	It's an example. Otherwise, general science takes 3 sigma certainty.
+11:12:16 From Noah Jelich To Everyone:
+	Replying to "What's the thresho..."
+	
+	https://en.wikipedia.org/wiki/68%E2%80%9395%E2%80%9399.7_rule
+11:12:35 From Carlo Parisi To Everyone:
+	Don’t we have collisions in zk proofs?
+11:12:43 From Marshall Gaucher To Everyone:
+	Likely could just ping the admin to ask in discord
+11:13:00 From Dogus U To Everyone:
+	Reacted to "You have to zk pro..." with 😂
+11:13:18 From Rodrigo Soares To Everyone:
+	Reacted to "You have to zk prove..." with 😂
+11:13:39 From Caio Barros To Everyone:
+	Replying to "What's the threshold..."
+	
+	Didnt know about that rule! Real tks!
+11:13:44 From Caio Barros To Everyone:
+	Reacted to "It's an example. Oth..." with 👍
+11:13:46 From Vladimir Rotariu To Everyone:
+	Replying to "What's the threshold..."
+	
+	The three sigma rule is not enough for some physics applications though, interested what is the case for security… 🙂
+11:13:56 From Caio Barros To Everyone:
+	Reacted to "https://en.wikipedia..." with 👍
+11:14:22 From Anuj Tanwar To Everyone:
+	Reacted to "https://en.wikiped..." with 👍
+11:14:28 From Ugur Sen To Everyone:
+	Replying to "Don’t we have collis..."
+	
+	I guess, there is always collision probability since we work in finite fields, but this probability is really small
+11:14:31 From Noah Jelich To Everyone:
+	Replying to "What's the thresho..."
+	
+	Take the logic and extend it. In the social sciences, a result may be considered "significant" if its confidence level is of the order of a two-sigma effect (95%), while in particle physics, there is a convention of a five-sigma effect (99.99994% confidence) being required to qualify as a discovery.
+11:14:49 From Carlo Parisi To Everyone:
+	Replying to "Don’t we have collis..."
+	
+	So the ball probably is very on point since there is also a collision there
+11:14:55 From Carlo Parisi To Everyone:
+	Replying to "Don’t we have collis..."
+	
+	The first example
+11:15:32 From Anuj Tanwar To Everyone:
+	Reacted to "Take the logic and..." with 👍
+11:16:30 From Robert | Extropy To Everyone:
+	Replying to "Don’t we have collis..."
+	
+	We will look how zk-starks addresses this problem as they utilize collision-resistant hash functions
+11:16:43 From Caio Barros To Everyone:
+	Reacted to "Take the logic and e..." with 👍
+11:16:54 From Haseeb Saeed To Everyone:
+	Reacted to "https://en.wikipedia..." with 👍
+11:16:55 From Noah Jelich To Everyone:
+	Replying to "What's the thresho..."
+	
+	Security is more like social sciences :p
+11:17:06 From Ugur Sen To Everyone:
+	Replying to "What's the threshold..."
+	
+	100bit security is enough according to NIST, so if we repeate 100 times it will satisfy 100 bit security 2^-100
+11:17:27 From Nikos Koumbakis | Jumaru.eth To Everyone:
+	That kind of quotes are why I like Vitalic
+11:17:28 From Vladimir Rotariu To Everyone:
+	Reacted to "Take the logic and e..." with 👍
+11:17:36 From Vladimir Rotariu To Everyone:
+	Reacted to "100bit security is e..." with 👍🏼
+11:17:44 From Haseeb Saeed To Everyone:
+	Reacted to "That kind of quotes ..." with 😂
+11:18:14 From Alexe Spataru To Everyone:
+	How does the verifier knows that the proof came out of that exact problem, i.e. hash was generated 100 million times, not 99 million?
+11:18:27 From Anuj Tanwar To Everyone:
+	Reacted to "100bit security is..." with 👍🏼
+11:18:39 From Anuj Tanwar To Everyone:
+	Reacted to "That kind of quote..." with 😂
+11:19:35 From Ugur Sen To Everyone:
+	Replying to "How does the verifie..."
+	
+	You can reveal the number of steps as public input,
+11:19:50 From Caio Barros To Everyone:
+	Reacted to "You can reveal the n..." with 😯
+11:20:23 From Nikos Koumbakis | Jumaru.eth To Everyone:
+	add 👍
+11:21:32 From Mohammed Hussan To Everyone:
+	Reacted to "That kind of quotes ..." with 😂
+11:22:16 From Mohammed Hussan To Everyone:
+	No Slido for this course?
+11:23:55 From Robert | Extropy To Everyone:
+	Replying to "How does the verifie..."
+	
+	As Laurence mentioned, there will be a lot of collaborations  between the prover and the verifier regarding the problem instance, hashing and commitment etc.. hence agreeing on the setup of the system.
+11:24:05 From Gabriel FOURNIER To Everyone:
+	I have an echo ?
+11:24:08 From Robert | Extropy To Everyone:
+	Replying to "No Slido for this co..."
+	
+	No, for this course we wont use Slido. 🙂
+11:24:17 From Marshall Gaucher To Everyone:
+	No echo here
+11:24:18 From Gabriel FOURNIER To Everyone:
+	mb
+11:24:25 From MaxMustermann2 To Everyone:
+	Reacted to "No echo here" with 👍
+11:24:26 From Gabriel FOURNIER To Everyone:
+	It’s the video from yesterday
+11:24:28 From Mantas Stasauskas To Everyone:
+	Reacted to "No echo here" with 👍
+11:24:29 From Sebastian T F To Everyone:
+	Reacted to "No echo here" with 👍
+11:24:31 From Caio Barros To Everyone:
+	Reacted to "No echo here" with ⬆️
+11:24:32 From Encode Bootcamp To Everyone:
+	Reacted to "No echo here" with 👍
+11:24:35 From Raidas G To Everyone:
+	Reacted to "No echo here" with 👍
+11:24:35 From Dogus U To Everyone:
+	Reacted to "It’s the video fr..." with 😂
+11:24:38 From gundeepsingh To Everyone:
+	Reacted to "It’s the video from ..." with 😂
+11:24:39 From Andras Szucs To Everyone:
+	Reacted to "It’s the video from ..." with 😂
+11:24:39 From Anuj Tanwar To Everyone:
+	Reacted to "No echo here" with 👍
+11:24:46 From Berkin Gürcan To Everyone:
+	Reacted to "It’s the video from ..." with 😂
+11:24:50 From Haseeb Saeed To Everyone:
+	Reacted to "No echo here" with 👍
+11:25:02 From Haseeb Saeed To Everyone:
+	Reacted to "It’s the video from ..." with 😂
+11:25:10 From Nikos Koumbakis | Jumaru.eth To Everyone:
+	I missed them also initaly, but is not bad also that we are always on the same screen.
+11:26:20 From Vladimir Rotariu To Everyone:
+	Reacted to "It’s the video from ..." with 😂
+11:27:47 From mohammed To Everyone:
+	why are the trees getting biger to the left?
+11:27:52 From Lucas MARTIN CALDERON To Everyone:
+	What makes it post-quantum secure, when it comes to the prover and verifier?
+11:28:13 From Dogus U To Everyone:
+	Reacted to "why are the trees ..." with 🤔
+11:28:15 From Haseeb Saeed To Everyone:
+	Reacted to "why are the trees ge..." with 🤔
+11:28:22 From Carlo Parisi To Everyone:
+	Replying to "What makes it post-q..."
+	
+	I would not assume that they are
+11:28:56 From Carlo Parisi To Everyone:
+	Replying to "What makes it post-q..."
+	
+	My bad, apparently they are
+11:29:02 From Caio Barros To Encode Bootcamp(Privately):
+	Hi, Neven! Just to make sure, am I using my correct first and last name as registers in the course? I'm afraid my attendance is not being counted 😅
+11:29:25 From Robert | Extropy To Everyone:
+	Replying to "why are the trees ge..."
+	
+	Not sure, it's an image from Starkware's article. Might be because there are more examples mentioned there.
+11:29:31 From Illya Gerasymchuk To Everyone:
+	ZKSNARS are not quantum secure-right?
+11:29:35 From Illya Gerasymchuk To Everyone:
+	Only ZK-STARKS
+11:29:44 From Robert | Extropy To Everyone:
+	Reacted to "Only ZK-STARKS" with 👍
+11:29:48 From Haseeb Saeed To Everyone:
+	Reacted to "Only ZK-STARKS" with 👍
+11:31:43 From Ugur Sen To Everyone:
+	Replying to "What makes it post-q..."
+	
+	If there is an quantum algorithm to break a system it named not quantum secure, for instance, DLP based systems are not quantum secure, sicnce DLP can be broken by Using Shor's algorithm which runs in quantum computer.
+11:32:13 From MaxMustermann2 To Everyone:
+	Replying to "What makes it post-q..."
+	
+	Which part of the SNARKs isn't quantum secure?
+11:32:17 From Vladimir Rotariu To Everyone:
+	Reacted to "If there is an quant..." with 👍🏼
+11:32:32 From Anuj Tanwar To Everyone:
+	Reacted to "If there is an qua..." with 👍🏼
+11:33:25 From Ugur Sen To Everyone:
+	Replying to "What makes it post-q..."
+	
+	in particular, taking exponentation parts, like g^x, quantum computers can extract x from calculated g^x
+11:33:51 From Ugur Sen To Everyone:
+	Replying to "What makes it post-q..."
+	
+	where traditinal computers cannot
+11:34:35 From MaxMustermann2 To Everyone:
+	Replying to "What makes it post-q..."
+	
+	So it is the DLP, but "where" in STARK is exponetntation used?
+11:35:01 From Lucas MARTIN CALDERON To Everyone:
+	Does the proof also include the inputs and the outputs for the algorithm that the ZK protects?
+11:35:01 From Ugur Sen To Everyone:
+	Replying to "What makes it post-q..."
+	
+	STARKs are quantum safe,
+11:35:37 From MaxMustermann2 To Everyone:
+	Replying to "What makes it post-q..."
+	
+	Sorry, typo, SNARK*
+11:35:52 From Lucas MARTIN CALDERON To Everyone:
+	Reacted to "If there is an quant..." with 👍🏼
+11:36:07 From Raidas G To Everyone:
+	Reacted to "Does the proof also ..." with 🤔
+11:36:14 From Lucas MARTIN CALDERON To Everyone:
+	Reacted to "in particular, takin..." with 👍
+11:36:39 From Haseeb Saeed To Everyone:
+	Reacted to "in particular, takin..." with 👍
+11:36:50 From Anuj Tanwar To Everyone:
+	Are there any specific cases that can be trusted only when we have  interactive proofs?
+11:37:11 From Haseeb Saeed To Everyone:
+	Reacted to "Are there any specif..." with 👍
+11:37:35 From Diego Gallegos To Everyone:
+	Replying to "What makes it post-q..."
+	
+	I suppose later, commitment will be explained. But when committing a proof there is a cryptographically step where DLP lags are used.
+11:37:43 From MaxMustermann2 To Everyone:
+	Reacted to "I suppose later, com..." with 👍
+11:38:09 From Ugur Sen To Everyone:
+	Reacted to "I suppose later, com..." with 👍
+11:38:58 From Robert | Extropy To Everyone:
+	Replying to "Does the proof also ..."
+	
+	Inputs are for the computation we are doing, where the prover and the verifier will come to an agreement for the computation (such as a secret, etc), the output will be public information.
+11:41:39 From Anuj Tanwar To Everyone:
+	What about Signatures vs Proofs? The most distinct feature?
+11:42:00 From youssef khaoulaj To Everyone:
+	monero is on Watch list in USA
+11:42:01 From Illya Gerasymchuk To Everyone:
+	For anyone who has trouble understanding non-interactive proofs, I can share my intuition. For every ZK Circuit (A.K.A. “proof”), you will have two sets of cryptographic keys: the prover key, and the verifier key. The prover key is used to generate the ZK proof, the verifier key is used to verify it. The proof represents “an observation of execution”. The verifier key verifies if that execution was done strictly accordingly to what the ZK Circuit (A.K.A. “zero-knowledge program/proof”) has defined.
+11:42:38 From Prudhvi Rampey To Everyone:
+	Reacted to "For anyone who has t..." with 🙌
+11:42:39 From Raidas G To Everyone:
+	Reacted to "For anyone who has t..." with 🙌
+11:43:14 From Haseeb Saeed To Everyone:
+	Reacted to "For anyone who has t..." with 🙌
+11:43:38 From Jorge Medina To Everyone:
+	Reacted to "For anyone who has t..." with 🙌
+11:43:39 From Claudio Boas To Everyone:
+	Reacted to "Only ZK-STARKS" with 👍
+11:43:47 From Jorge Medina To Everyone:
+	Removed a 🙌 reaction from "For anyone who has t..."
+11:43:49 From Jorge Medina To Everyone:
+	Reacted to "For anyone who has t..." with 🙌
+11:44:08 From Anuj Tanwar To Everyone:
+	Reacted to "For anyone who has..." with 🙌
+11:44:09 From Ugur Sen To Everyone:
+	Replying to "monero is on Watch l..."
+	
+	can we say that any zkVMs can be in danger like this?
+11:44:13 From Caio Barros To Everyone:
+	Reacted to "For anyone who has t..." with 🙌
+11:45:09 From Illya Gerasymchuk To Everyone:
+	The key point, is that a ZK Proof represents an observation of execution of a program. When you generate a ZK proof, you execute a ZK Circuit/program, and the proof shows that “I have observed this computation, and here is the proof of what I observed”. The proof of the computation that was observed can then be verified by the verification key. The verification key checks if the observed execution corresponds to the claimed ZK Proof/Program.
+11:45:21 From Robert | Extropy To Everyone:
+	Replying to "What about Signature..."
+	
+	I would say they have distinct purposes where signatures are more towards authentication and integrity while proofs are for privacy and confidentiality.
+11:45:31 From Robert | Extropy To Everyone:
+	Reacted to "For anyone who has t..." with 🙌
+11:45:44 From Anuj Tanwar To Everyone:
+	Reacted to "The key point, is ..." with ⬆️
+11:46:07 From alfonsodemora To Everyone:
+	Reacted to "The key point, is th..." with 👍
+11:48:29 From Ben Murison | OV To Everyone:
+	Replying to "What about Signature..."
+	
+	FHE isn't here yet though for say training an AI model. Is that right?
+11:48:56 From Anuj Tanwar To Everyone:
+	Reacted to "I would say they h..." with 👍
+11:49:03 From Lucas MARTIN CALDERON To Everyone:
+	Replying to "What about Signature..."
+	
+	There are some companies that can indeed operate on some basic ML algorithms with FHE
+11:49:03 From Illya Gerasymchuk To Everyone:
+	Replying to "What about Signature..."
+	
+	@Ben Murison | OV it’s here
+11:49:11 From Illya Gerasymchuk To Everyone:
+	Replying to "What about Signature..."
+	
+	Check out Mina Blockchain and O1JS
+11:49:15 From jason To Everyone:
+	Replying to "What about Signature..."
+	
+	FHENIX is being built out with FHE
+11:49:22 From Illya Gerasymchuk To Everyone:
+	Replying to "What about Signature..."
+	
+	You can train your model offline, and submit a proof of your training
+11:49:23 From Ben Murison | OV To Everyone:
+	Replying to "What about Signature..."
+	
+	@Illya Gerasymchuk woah
+11:49:34 From Illya Gerasymchuk To Everyone:
+	Replying to "What about Signature..."
+	
+	Yeah, I was also blown away 😄
+11:49:43 From Illya Gerasymchuk To Everyone:
+	Replying to "What about Signature..."
+	
+	When I found out
+11:50:02 From Illya Gerasymchuk To Everyone:
+	Replying to "What about Signature..."
+	
+	https://docs.minaprotocol.com/zkapps
+11:50:42 From Diego Gallegos To Everyone:
+	Replying to "What about Signature..."
+	
+	Amazon launch clean rooms a couple of years ago and there is a homorphic toolkit, so yes its possible and used. Fireblocks also has something similar.
+11:51:02 From Anuj Tanwar To Everyone:
+	Reacted to "https://docs.minap..." with 🙌
+11:51:04 From Diego Gallegos To Everyone:
+	Replying to "What about Signature..."
+	
+	I don't know about zk part though.
+11:51:04 From Illya Gerasymchuk To Everyone:
+	Replying to "What about Signature..."
+	
+	You run the computation to generate the proof offline, and only submit the proof. Refer to my message above. Given a proof, it’s easy to verify wether that proof is a result of executing certain code (ZK Circuit).
+11:51:39 From Caio Barros To Everyone:
+	Reacted to "The key point, is th..." with 👍
+11:53:43 From Nikos Koumbakis | Jumaru.eth To Everyone:
+	@Encode Bootcamp is it possible to get an export of the chat at the end of the day ? It has great comments !
+11:54:23 From Vladimir Rotariu To Everyone:
+	Reacted to "https://docs.minapro..." with 🙌
+11:54:54 From Encode Bootcamp To Everyone:
+	Replying to "@Encode Bootcamp is ..."
+	
+	yes! the chat transcript of each session will be located in the Notion page alongside the recording :)
+11:55:06 From Robert | Extropy To Everyone:
+	Reacted to "yes! the chat transc..." with 👍
+11:55:14 From Anuj Tanwar To Everyone:
+	Reacted to "You run the comput..." with ⬆️
+11:56:24 From Nikos Koumbakis | Jumaru.eth To Everyone:
+	add 👍
+11:56:38 From Nikos Koumbakis | Jumaru.eth To Everyone:
+	awesome!
+11:56:39 From Robert | Extropy To Everyone:
+	Replying to "What about Signature..."
+	
+	on the ZKML there is also Orion on Starknet 	 https://orion.gizatech.xyz/welcome/readme
+11:57:02 From Vladimir Rotariu To Everyone:
+	Reacted to "on the ZKML there is..." with 👍🏼
+11:57:20 From Haseeb Saeed To Everyone:
+	Reacted to "on the ZKML there is..." with 😮
+11:58:27 From Diego Gallegos To Everyone:
+	Replying to "Does the proof also ..."
+	
+	Proof includes a binding commitment of the inputs. In some cases, a random sample from the field is taken to generate intermediate values (gp = general parameters) and this are commited and used by the prover.
+	
+	Transparent setup is where setup is not needed and usees public randomness which the verifier has access to.
+11:59:47 From Gabriel FOURNIER To Everyone:
+	U can win 1B$ if you can prove that N = NP lmao
+12:00:04 From Caio Barros To Everyone:
+	Reacted to "U can win 1B$ if you..." with 😎
+12:00:08 From Carlo Parisi To Everyone:
+	Wasnt it 1M?
+12:00:09 From Gabriel FOURNIER To Everyone:
+	Replying to "U can win 1B$ if you..."
+	
+	P=NP*
+12:00:20 From Robert | Extropy To Everyone:
+	Reacted to "Wasnt it 1M?" with 👍
+12:00:22 From Illya Gerasymchuk To Everyone:
+	Replying to "U can win 1B$ if you..."
+	
+	Gimme 15 mins
+12:00:24 From Nikos Koumbakis | Jumaru.eth To Everyone:
+	add 😁
+12:00:26 From Nikos Koumbakis | Jumaru.eth To Everyone:
+	remove 😁
+12:00:36 From Gabriel FOURNIER To Everyone:
+	Reacted to "Wasnt it 1M?" with 👍
+12:00:39 From Caio Barros To Everyone:
+	Replying to "U can win 1B$ if you..."
+	
+	Laurence is gonna teach that in this course, just hold on
+12:00:40 From Nikos Koumbakis | Jumaru.eth To Everyone:
+	add 😆
+12:00:46 From Gabriel FOURNIER To Everyone:
+	Reacted to "Gimme 15 mins" with 😆
+12:00:48 From Nikos Koumbakis | Jumaru.eth To Everyone:
+	add 👍
+12:00:48 From Haseeb Saeed To Everyone:
+	Reacted to "Gimme 15 mins" with 😆
+12:00:54 From Nikos Koumbakis | Jumaru.eth To Everyone:
+	add 😁
+12:00:57 From Haseeb Saeed To Everyone:
+	Reacted to "Laurence is gonna te..." with 🎉
+12:01:04 From Caio Barros To Everyone:
+	Reacted to "Gimme 15 mins" with 😆
+12:01:09 From Anuj Tanwar To Everyone:
+	Replying to "The key point, is ..."
+	
+	These are based on working out/solving some mathematics, what about say for a problem like proving that 'Person X viewed the price of ETH at 9am today`?
+12:01:20 From Anuj Tanwar To Everyone:
+	Reacted to "Gimme 15 mins" with 😆
+12:01:43 From Ugur Sen To Everyone:
+	Replying to "U can win 1B$ if you..."
+	
+	they are already equal 😄 https://media.licdn.com/dms/image/C5612AQEHO8fzfZZnfw/article-cover_image-shrink_423_752/0/1592480508630?e=1702512000&v=beta&t=gV_mIk8FKT3iaGsuT-qQVcT9QAypLlxDHrOBg6np3r4
+12:02:09 From Gabriel FOURNIER To Everyone:
+	Reacted to "they are already equ..." with ❤️
+12:02:18 From Vladimir Rotariu To Everyone:
+	https://www.youtube.com/watch?v=uchjTIlPzFo&list=PLS01nW3Rtgor_yJmQsGBZAg5XM4TSGpPs&ab_channel=Blockchain-Web3MOOCs
+12:06:52 From Nikos Koumbakis | Jumaru.eth To Everyone:
+	why bulletproofs are N/A in gas cost?
+12:08:46 From Mark Vujevits To Everyone:
+	in the table did the trusted setup refer to that for snark?
+12:08:57 From Carlo Parisi To Everyone:
+	Circom is using SNARKs right?
+12:08:57 From Mark Vujevits To Everyone:
+	lambda
+12:08:59 From Anuj Tanwar To Everyone:
+	Reacted to "in the table did t..." with 👏
+12:09:27 From Lucas MARTIN CALDERON To Everyone:
+	Replying to "Circom is using SNAR..."
+	
+	Circom can be used with PLONK to create SNARKs
+12:09:33 From Ugur Sen To Everyone:
+	Replying to "Circom is using SNAR..."
+	
+	it supports, groth16 plonk fflong so all are snark
+12:10:25 From Ugur Sen To Everyone:
+	Replying to "why bulletproofs are..."
+	
+	nice question, will be good if there is any person to answer
+12:11:17 From Illya Gerasymchuk To Everyone:
+	Can you please explain what is the lambda in the SNARKS?
+12:11:46 From Robert | Extropy To Everyone:
+	Replying to "in the table did the..."
+	
+	Yes, we will talk about trusted setups. Only SNARKS need trusted setup.
+12:12:13 From Caio Barros To Everyone:
+	What's the main difference to a zkEVM for an EVM? Does it have the prover and verifier algorithms built-in on it?
+12:12:20 From alfonsodemora To Everyone:
+	Do we have access to the presentation?
+12:12:28 From Seungmin Jeon To Everyone:
+	Replying to "in the table did the..."
+	
+	@Robert | Extropy Doesn't Bulletproof have trusted setup?
+12:12:30 From Robert | Extropy To Everyone:
+	Replying to "why bulletproofs are..."
+	
+	I believe the information is coming from here, but not sure why there is N/A for bulletproofs		https://github.com/matter-labs/awesome-zero-knowledge-proofs
+12:12:42 From Ugur Sen To Everyone:
+	Reacted to "I believe the inform..." with 👍
+12:12:45 From Vladimir Rotariu To Everyone:
+	Reacted to "I believe the inform..." with 👍
+12:13:01 From Mark Vujevits To Everyone:
+	Replying to "in the table did the..."
+	
+	@Robert | Extropy okay so yes, lambda is the reason for the trusted setup 👍
+12:13:18 From Illya Gerasymchuk To Everyone:
+	Replying to "Do we have access to..."
+	
+	https://discord.com/channels/705799923014041651/1154056311227564072/1160926382629589012
+12:13:45 From Illya Gerasymchuk To Everyone:
+	Replying to "Can you please expla..."
+	
+	Ahh, it’s a part of the trusted setup. Thank you!
+12:13:53 From Anuj Tanwar To Everyone:
+	Replying to "What's the main di..."
+	
+	I think zkEVM is more about proving the current state of the system and doesnt require every node to keep the whole blockchain data to get the same state but rather the proof is enough
+12:13:59 From Ugur Sen To Everyone:
+	Bulletproofs doesnt require trusted setup causes it relies on IPA commitments unlike KZG
+12:14:04 From Encode Bootcamp To Caio Barros(Privately):
+	Replying to "Hi, Neven! Just to m..."
+	
+	Yep, I see it correctly - no worries!
+12:14:10 From Seungmin Jeon To Everyone:
+	Reacted to "Bulletproofs doesnt ..." with 👍
+12:14:13 From Caio Barros To Encode Bootcamp(Privately):
+	Reacted to "Yep, I see it correc..." with 👍
+12:14:17 From Illya Gerasymchuk To Everyone:
+	Replying to "Can you please expla..."
+	
+	For anyone interested, I suggest reading the SNARKS paper.
+12:14:25 From Carlo Parisi To Everyone:
+	Was the ZKG ceremony of the proto dank sharing about this secret?
+12:14:28 From Rafael Nicolau To Everyone:
+	Is the KZG ceremony also an example of acquiring randomness for a trusted setup?
+12:15:12 From Ugur Sen To Everyone:
+	Replying to "Is the KZG ceremony ..."
+	
+	also jointly random yes I guess
+12:15:29 From Rafael Nicolau To Everyone:
+	Reacted to "also jointly random ..." with 👍
+12:16:10 From Illya Gerasymchuk To Everyone:
+	For anyone interested, the part that is being explained (very well) now is also explained in details in the SNARKS paper.
+12:16:20 From Carlo Parisi To Everyone:
+	Don’t you need the secret to create the proof?
+12:16:23 From amir jabarivasal To Everyone:
+	Can we do a ceremony?
+12:16:39 From Robert | Extropy To Everyone:
+	Replying to "in the table did the..."
+	
+	Bulletproofs are non-interactive that require no trusted setup.
+12:16:49 From Seungmin Jeon To Everyone:
+	Reacted to "Bulletproofs are non..." with 👍
+12:16:55 From Rafael Nicolau To Everyone:
+	So basically the randomness of everyone is hashed, and if someone "forgets" the randomness they submitted this lambda cannot be reproduced?
+12:17:18 From Robert | Extropy To Everyone:
+	Replying to "in the table did the..."
+	
+	https://github.com/AdamISZ/from0k2bp/blob/master/from0k2bp.pdf
+12:17:41 From Robert | Extropy To Everyone:
+	Reacted to "https://discord.com/..." with 👍
+12:17:42 From Gerald Iakobinyi-Pich To Everyone:
+	Will that parameter lambda be stored somewhere?
+12:18:08 From Diego Gallegos To Everyone:
+	Replying to "Will that parameter ..."
+	
+	I think it should be deleted after setup
+12:18:21 From Illya Gerasymchuk To Everyone:
+	Regarding public ceremonies, the question is always who are the participants in it. If the vast majority belongs to a particular (attacking) group, then the security can be compromised.
+12:18:31 From Ugur Sen To Everyone:
+	Replying to "Is the KZG ceremony ..."
+	
+	In particular, you contribute the inside secret without knowing the previous secret (: MPC
+12:18:36 From Robert | Extropy To Everyone:
+	Reacted to "I think it should be..." with 👍
+12:18:49 From Caio Barros To Everyone:
+	Reacted to "Regarding public cer..." with 🤔
+12:18:59 From alfonsodemora To Everyone:
+	Reacted to "https://discord.com/..." with 👍
+12:19:08 From Ugur Sen To Everyone:
+	If one person is honest, the whole process will be secure I guess
+12:19:22 From Nikos Koumbakis | Jumaru.eth To Everyone:
+	add 👍
+12:19:26 From Robert | Extropy To Everyone:
+	Reacted to "If one person is hon..." with 👍
+12:19:41 From Vladimir Rotariu To Everyone:
+	Reacted to "If one person is hon..." with 👍
+12:19:50 From Max Sultakov To Everyone:
+	Replying to "Regarding public cer..."
+	
+	I believe it’s about a single person being honest, not the majority.
+12:19:57 From Dogus U To Everyone:
+	is the waste stored somewhere for later use ? or is not needed after the ceremony
+12:20:01 From Max Sultakov To Everyone:
+	Reacted to "If one person is hon..." with 👍
+12:20:07 From Nikos Koumbakis | Jumaru.eth To Everyone:
+	add 👍
+12:20:08 From Illya Gerasymchuk To Everyone:
+	Nooo 😭 We can’t trust a single person, no matter who they are
+12:20:11 From Raidas G To Everyone:
+	Reacted to "Nooo 😭 We can’t tru..." with ⬆️
+12:20:13 From Carlo Parisi To Everyone:
+	Reacted to "Nooo 😭 We can’t tru..." with ⬆️
+12:20:15 From Caio Barros To Everyone:
+	Reacted to "Nooo 😭 We can’t tru..." with 👍
+12:20:16 From Caio Barros To Everyone:
+	Reacted to "Nooo 😭 We can’t tru..." with ⬆️
+12:20:17 From Max Sultakov To Everyone:
+	Reacted to "Nooo 😭 We can’t tru..." with 👍
+12:20:18 From Raidas G To Everyone:
+	Removed a ⬆️ reaction from "Nooo 😭 We can’t tru..."
+12:20:18 From Mark Vujevits To Everyone:
+	Reacted to "Nooo 😭 We can’t tru..." with 👍
+12:20:21 From Illya Gerasymchuk To Everyone:
+	Specially with the centralisation of Ethereum
+12:20:22 From Mantas Stasauskas To Everyone:
+	KZG had 141k
+12:20:22 From Raidas G To Everyone:
+	Reacted to "is the waste stored ..." with ⬆️
+12:20:32 From Nikos Koumbakis | Jumaru.eth To Everyone:
+	add 👍
+12:20:39 From Carlo Parisi To Everyone:
+	Don’t you need the secret to create the proof?
+12:20:41 From Anuj Tanwar To Everyone:
+	Reacted to "KZG had 141k" with 😮
+12:20:54 From Illya Gerasymchuk To Everyone:
+	Replying to "Regarding public cer..."
+	
+	@Max Sultakov yeah, I believe you are correct
+12:21:09 From Illya Gerasymchuk To Everyone:
+	Replying to "Don’t you need the s..."
+	
+	Indirectly
+12:21:22 From Nikos Koumbakis | Jumaru.eth To Everyone:
+	I was there, you can trust it 😁
+12:21:25 From Illya Gerasymchuk To Everyone:
+	Replying to "Don’t you need the s..."
+	
+	The lambda (secret parameter) that was used to create prover and verifier keys
+12:21:45 From MaxMustermann2 To Everyone:
+	Replying to "Don’t you need the s..."
+	
+	Only the Common Reference String is required. Lambda must be discarded afterwards.
+12:21:47 From Illya Gerasymchuk To Everyone:
+	Replying to "Don’t you need the s..."
+	
+	Prover and verifier keys are public and deterministic (please correct me if I’m mistaken on the deterministic part, but I doubt so)
+12:21:49 From Carlo Parisi To Everyone:
+	Replying to "Don’t you need the s..."
+	
+	So it is used to create the keys and then destroyed?
+12:21:54 From MaxMustermann2 To Everyone:
+	Reacted to "So it is used to cre..." with 👍
+12:22:45 From Illya Gerasymchuk To Everyone:
+	Replying to "Don’t you need the s..."
+	
+	@Carlo Parisi yes
+12:23:16 From Robert | Extropy To Everyone:
+	Replying to "is the waste stored ..."
+	
+	toxic waste is deleted after the setup
