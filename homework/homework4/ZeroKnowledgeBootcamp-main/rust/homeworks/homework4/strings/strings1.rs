@@ -2,7 +2,6 @@
 // Make me compile without changing the function signature!
 // Execute `zustlings hint strings1` for hints ;)
 
-// I AM NOT DONE
 
 fn main() {
     let answer = current_favorite_course();
@@ -10,5 +9,5 @@ fn main() {
 }
 
 fn current_favorite_course() -> String {
-    "Solana"
+    return "Solana".to_string();
 }

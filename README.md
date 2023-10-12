@@ -67,6 +67,8 @@ Caio SC -> Sierro -> Cairo Assembly -> Validity Proof.
 1. Variables are immutable by default unless declared witht the `mut` keyword.
 2. `Rustlings brings you more to the web2` side of Rust. A better approach is trying to implement a curve/finite field in Rust. ZCash ia good place to look at it - like the belman library.
 
+
+
 ### Resources:
 - https://github.com/matter-labs/awesome-zero-knowledge-proofs
 - https://l2beat.com/ provides a lot of information about various l2 solutions
