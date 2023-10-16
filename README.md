@@ -22,8 +22,11 @@
 1. ZK is composed of a `prover` and a `verifier`. Sometimes there's a `creator` of the system.
 2. The idea of ZK proofs was invented in the 80's.
 3. ZK-SNarks are not quantom-secure, only ZK-STarks.
-4. Private inputs to a ZK proof are called witnesses.
-5. To oversimplify: represented on a computer, a ZKP is nothing more than a sequence of numbers, carefully computed by Peggy, together with a bunch of boolean check that a Verifier can check their thruthfulness.
+4. Private inputs to a ZK proof are called witnesses. 
+Witnesses can be said to be the answer that the prover knows, but the verifier won't know.
+So, for example, in the sqrt() function:
+I want to prove I know the sqrt of 36. I do then create a proof of that. The verifier can check whether my proof is valid. He won't know what's the sqrt of 36, but he'll know that I know it. The `witness` == `answer` to the problem in question. In our example, the problem in question was knowing the sqrt of 36, but it can be literally anything.
+5. To oversimplify: represented on a computer, a ZKP is nothing more than a sequence of numbers, carefully computed by Peggy, together with a bunch of boolean checks that a Verifier can check their thruthfulness.
 6. ZK-SNarks is Non-interactive.
 7. SNARK:
 S - succint = quick, small in size.
@@ -67,8 +70,54 @@ Caio SC -> Sierro -> Cairo Assembly -> Validity Proof.
 1. Variables are immutable by default unless declared witht the `mut` keyword.
 2. `Rustlings brings you more to the web2` side of Rust. A better approach is trying to implement a curve/finite field in Rust. ZCash ia good place to look at it - like the belman library.
 
+## Week1 Summary:
+I'll talk about the example below:
+https://zokrates.github.io/examples/sha256example.html
+
+In the link above, we've got a simple example of Victor and Peggy. Victor has a digest - lots of bytes - and Peggy wants to prove she know the preimage hash of that digest: basically, she wants to prove to Victor she know what was the input given to `sha256` hashing function whose output was the digest hold by Victor. Peggy then creates the `.zok` file which is going to execute some computation on the answer = witness Peggy has and produce the output that Victor wants to check. If the `.zok` file is correctly built, it will generate the right output. So far, Peggy has generated a file that has an algorithm that computes her witness==answer and generates the output that Victor wants. Now, she generates a proof out of that file. Once she generates a proof, she gets the inputs the verifier needs to put into his verifier contract to check whether her inputs were right.
+Victor deploys his contract on the Ethereum blockchain and she then calls the `verifierTx` function with the inputs she's used in her program. Once Victor sees that Peggy has called the `verifierTx` and that it returned `true`, he's able to find out she truly know what she's talking about.  
+
+## WEEK 2
+
+### Class 5
+#### Rust
+1. `If` is an expression rather than a statement. This means that it can return a value, for example as below:
+```
+let condition = true;
+let n = if condition {5} else {6};
+```
+2. `match` in Rust is like `switch` in JS.
+3. When I use an Option<T> match, we need to handle every scenario of the match. This means including, for example, a `None => None`.
+4. `cargo` is the package manager for rust-based programs.
+5. `Ownership` means that the value belongs to a variable. A variable and a value in Rust are separated. So, for example:
+```
+let mut mt_vec = vec![1,2,3];
+``` 
+Here, `my_vec` owns the vector.
+6. Stack and heap in Rust - if I'm right - handle different values: one handles the simple values (stack) and the other handles objs and more complex value (heap).
+7. When an ownership is passed onto a function, the ownership is lost.
+8. If a has a type `T`, the &a has a type `&T`. This is called a reference and creating reference is called `borrowing`. Borrowing is like refering to a value without taking ownership of it.
+9. `Trait`s in Rust are like interfaces in solidity. If I implement a trait, I must declare all the functions in the trait. 
+10. In a vector declaration there is an exclamation mark, that means a `macro`.
+11. Difference between &str and String?Both string slice &str and String (which is a Vec<u8> under the hood) are UTF-8 encoded. The differences are:
+String is owned. &str is borrowed.
+String contains a pointer to heap-allocated memory. &str points to data that can be stored in binary/heap/stack
+String can grow
+
+#### Starknet/Cairo
+1. Txs on Starket/Cairo EVM get through the proccess of `NOT_RECEIVED` (by the sequencer)->`RECEIVED` (by the sequencer)->`ACCEPTED_ONL2`->`ACCEPTED_ONL1`|`REJECTED`. All of these labels are added to a tx as they are being proccessed
+2. Txs on Cairo VM can be rejected if the block wasn't accepted on L1 or it hasn't been executed due to a failing assertion. Unlike in the traditional EVM, txs on the Cairo-EVM might fail. 
+3. If a tx reverts, it does not mean the whole block will revert. EVM and Cairo-EVM are able now to handle that.
+4. There are differnet tx-types on L2 Cairo.
+5. My question: If ZKP proves a program has been correctly executed, couldn't we enforce it at the compiler? I gotta get a better understanding in here.
 
 
 ### Resources:
 - https://github.com/matter-labs/awesome-zero-knowledge-proofs
 - https://l2beat.com/ provides a lot of information about various l2 solutions
+- https://google.github.io/comprehensive-rust/other-resources.html Rust resources
+- https://astro-editor.netlify.app/ Updated Cairo playgroung
+- https://www.cairo-lang.org/playground/
+Cairo playgroung
+- https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html
+- https://doc.rust-lang.org/book/ch04-01-what-is-ownership. html#the-stack-and-the-heap Stack and Heap difference in Rust
