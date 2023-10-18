@@ -114,6 +114,24 @@ String can grow
 ### Class 6
 #### Confidential Tokens
 
+### Class 7
+#### Noir
+1. Noir is similar to Rust.
+2. `constrain` has been deprecated and replaced by `assert`.
+3. A good approach to follow is to learn Rust, then learn Cairo & Noir.
+4. It allows unnamed function like lambda functions in Python.
+5. Closures are also possible.
+6. Having assertions inside my code, like on the `.pok` file for ZoKrates is something that happens a lot in ZKP systems.
+7. Cairo - and other languages focused in the course for the ZKP circuits - are built to build the proofs algorithms, not the verifying part. In starknet, for example, C++ is used for the verifying part.
+#### Mina
+1. It's all about recursive proofs!
+2. Mina has a fixed size blockchain due to its built-in recursive design!
+3. Mina uses a ZKP to actually prove the state transitions. They only keep one proof as the entire blockchain state. That's why it's a fixed-size blockchain. 
+4. I can run a Mina node on a browser! Of course, it won't be an archive node.
+5. Contracts on MINA can be written in Typescript! (Checkout 01js)
+
+1. Starknet Solidity code is only for state transitions  like the verifier on L1 and the Starknet core contract on L1. 
+
 
 ### Resources:
 - https://github.com/matter-labs/awesome-zero-knowledge-proofs
@@ -129,3 +147,6 @@ Cairo playgroung
 https://docs.starknet.io/documentation/architecture_and_concepts/Network_Architecture/messaging-mechanism/
 https://github.com/glihm/starknet-messaging-dev
 - Starknet not being EVM compatible https://medium.com/starkware/stark-endgame-78a577733200
+- https://noir-lang.org/language_concepts/data_types/references/
+- https://medium.com/starkware/open-sourcing-the-battle-tested-stone-prover-1fe71aaab3b7 How Cairo/C++ work combined to make Starknet
+- https://www.youtube.com/playlist?list=PLMXIoXErTTYX-ZSxlaYDxsR66l5a39IwA Starknet Bootcamp
