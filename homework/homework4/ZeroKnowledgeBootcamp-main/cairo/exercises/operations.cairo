@@ -3,16 +3,18 @@
 // And always watch out for overflows e.g in the last test
 // Let try to use them
 
-// I AM NOT DONE
-
 fn modulus(x: u8, y: u8) -> u8 {
     // calculate the modulus of x and y
     // FILL ME
+    //x = q*y + r;
+    let quotient = x / y;
+    let res = x - quotient * y;
     res
 }
 
 fn floor_division(x: usize, y: usize) -> u32 {
     // calculate the floor_division of x and y
+    let res = x / y;
     // FILL ME
     res
 }
@@ -20,6 +22,7 @@ fn floor_division(x: usize, y: usize) -> u32 {
 fn multiplication(x: u64, y: u64) -> u64 {
     // calculate the multiplication of x and y
     // FILL ME
+    let res = y * x;
     res
 }
 
