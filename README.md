@@ -111,6 +111,9 @@ String can grow
 4. There are differnet tx-types on L2 Cairo.
 5. My question: If ZKP proves a program has been correctly executed, couldn't we enforce it at the compiler? I gotta get a better understanding in here.
 
+### Class 6
+#### Confidential Tokens
+
 
 ### Resources:
 - https://github.com/matter-labs/awesome-zero-knowledge-proofs
@@ -121,3 +124,8 @@ String can grow
 Cairo playgroung
 - https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html
 - https://doc.rust-lang.org/book/ch04-01-what-is-ownership. html#the-stack-and-the-heap Stack and Heap difference in Rust
+- https://extropy-io.medium.com/cairo-mini-series-4633053173f5 Get started with Cairo!
+- For good resources for L1-L2 Messaging for those interested:
+https://docs.starknet.io/documentation/architecture_and_concepts/Network_Architecture/messaging-mechanism/
+https://github.com/glihm/starknet-messaging-dev
+- Starknet not being EVM compatible https://medium.com/starkware/stark-endgame-78a577733200
