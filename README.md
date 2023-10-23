@@ -132,6 +132,21 @@ String can grow
 
 1. Starknet Solidity code is only for state transitions  like the verifier on L1 and the Starknet core contract on L1. 
 
+### Class 8
+1. BECOME a MINA node!
+2. Mina uses off-chain computation and on-chain verification!
+3. Off-chain computation does not make it non-decentralized, since the computation can be done locally - the execution layer of the MINA blockchain - and then only a proof is sent to the MINA verification layer. Off-chain here means I can do the computaiton on my browser, for example.
+4. Currently the MINA bridge with Ethereum make it possible for Ethereum to read MINA state, but not for MINA to read Ethereum state.
+
+# Week3
+## Class 9
+1. ZKApps are MINA's smart contracts.
+2. ZK Oracles: Allow any ZKApp to get data from any HTTPS data source. This is similar to Pragma Oracle or DECO.
+3. TODO: Build a MINA-like recursion proof-system in Rust.
+4. In ZkEVMs, there are usually two kind proofs: State proofs and EVM proofs.
+5. A zkEVM executes bytecode, but it also produces a proof that the computation has been executed correctly. 
+
+
 
 ### Resources:
 - https://github.com/matter-labs/awesome-zero-knowledge-proofs
@@ -150,3 +165,9 @@ https://github.com/glihm/starknet-messaging-dev
 - https://noir-lang.org/language_concepts/data_types/references/
 - https://medium.com/starkware/open-sourcing-the-battle-tested-stone-prover-1fe71aaab3b7 How Cairo/C++ work combined to make Starknet
 - https://www.youtube.com/playlist?list=PLMXIoXErTTYX-ZSxlaYDxsR66l5a39IwA Starknet Bootcamp
+- https://github.com/o1-labs/docs2/tree/main/examples/zkapps zkApps
+- https://github.com/iluxonchik/zkLocus zkApp by some guy from ZK bootcamp that proves you're in a place without revealing where you actually are.
+- https://github.com/mlabs-haskell/minauth 
+another project from a guy from the bootcamp. It's a MINA sponsored project for integration of web2 authorization services with ZK provers.
+- David Wor, cryptographer that knows his stuff. Helps use MINA, etc.
+- https://vitalik.ca/general/2022/08/04/zkevm.html
