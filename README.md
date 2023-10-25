@@ -146,7 +146,15 @@ String can grow
 4. In ZkEVMs, there are usually two kind proofs: State proofs and EVM proofs.
 5. A zkEVM executes bytecode, but it also produces a proof that the computation has been executed correctly. 
 
+### Class 10
+Class 10 zK:
+1. London Fork was the last one that wasn't so concerned about the merge on Ethereum, but it was concerned on the EVM operation. That's why some of the EVM compatible implement the EVM in it's state at the London Fork, like Linea.
+2. Linea has the possibility to batch up some blocks before sending them to be verified on L1. This may mean it's cheaper when compared to other L2s.
+Something that's encrypted is the execution trace of the program I'm trying to prove I actually run.
+3. In zkVMs, they usually get a program,  convert it to binary, hash the binary to uniquely identify the program and kind of concat that to the hash of the execution trace of the program. The program couldn't have had its execution done there if a hash of a right execution trace is provided.
 
+### Class 11
+1. One of the ways to ensure the trusted setup goes well and that no one will be able to "guess" the public parameters is that these parameters are something really hard to find out. For example, these parameters can be a public key whose private key has been destroyed.
 
 ### Resources:
 - https://github.com/matter-labs/awesome-zero-knowledge-proofs
@@ -171,3 +179,5 @@ https://github.com/glihm/starknet-messaging-dev
 another project from a guy from the bootcamp. It's a MINA sponsored project for integration of web2 authorization services with ZK provers.
 - David Wor, cryptographer that knows his stuff. Helps use MINA, etc.
 - https://vitalik.ca/general/2022/08/04/zkevm.html
+- https://www.rareskills.io/zk-book Generators/Groups
+
