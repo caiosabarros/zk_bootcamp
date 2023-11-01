@@ -30,13 +30,32 @@ I want to prove I know the sqrt of 36. I do then create a proof of that. The ver
 6. ZK-SNarks is Non-interactive.
 7. SNARK:
 S - succint = quick, small in size.
+How SNARKs work:
+Alice has a witness (secret) she wants to prove she knows about.
+The circuit creator makes public two pieces of information (Common Reference String) when he creates the system:
+- a public proving key `pk`.
+- a publc verification key `vk`.
+Alice then takes the proving key, her witness and also a public input `x`. This public input is going to be used by the verifier. Alive generates a proof `p` from the three pieces of info `w, pk, x`. Her proof `p` used the `pk` to make sure her proof follows the rules established by the program in the circuit.
+Bob - the verifier - then uses Alice's proof `p`, her public input `x` and also the `vk` to check whether a `true` is returned when he verifies the proof.
+If the verification returns true, Bob - and everyone now, if the system is public - knows that:
+Conclusion: Alice proved that given an input `x`, she knows the witness `w` that the program (circuit) computes.
+Example: Let's say that `x` is whether Alice's BTC balance is bigger than 10. Without revealing her public key, Alice can make a proof that given `x`, Alice's balance is bigger than 10. The verifier only needs to know `x` - and the keys pertaining to the circuit - to determine Alice's is not lying. Alice might give `w` as her public address, for example. 
+
 8. Have a look at ZCash.
 9. From a classmate:
 For anyone who has trouble understanding non-interactive proofs, I can share my intuition. For every ZK Circuit (A.K.A. “proof”), you will have two sets of cryptographic keys: the prover key, and the verifier key. The prover key is used to generate the ZK proof, the verifier key is used to verify it. The proof represents “an observation of execution”. The verifier key verifies if that execution was done strictly accordingly to what the ZK Circuit (A.K.A. “zero-knowledge program/proof”) has defined.
 The key point, is that a ZK Proof represents an observation of execution of a program. When you generate a ZK proof, you execute a ZK Circuit/program, and the proof shows that “I have observed this computation, and here is the proof of what I observed”. The proof of the computation that was observed can then be verified by the verification key. The verification key checks if the observed execution corresponds to the claimed ZK Proof/Program.
 10. There are also other kinds of techniques for implementing privacy of data on systems. One of them is ZK, ofc, but there is also FHE.
 11. The key point, is that a ZK Proof represents an observation of execution of a program. When you generate a ZK proof, you execute a ZK Circuit/program, and the proof shows that “I have observed this computation, and here is the proof of what I observed”. The proof of the computation that was observed can then be verified by the verification key. The verification key checks if the observed execution corresponds to the claimed ZK Proof/Program.
-12. 
+12. FHE (Fully Homomorphic Encryption): Basically, I have some data, I encrypt it and send it over to some computer/processor to make calculations on it. The calculations are made in the encrypted data and then I decrypt the result of the calculations, receiving the result of what would look like as if I had sent the original data, but I have not revealed it - the processor did not learn about it. Example:
+Secret: 3 and 4.
+Encrypted data: 6 and 8.
+Encryption: multiply by 2.
+Calculations on Processor: addition
+Decryption: divide by 2.
+In coprocessor: 6 + 8 = 14.
+Decrypted data: 14/2 = 7 = 3 + 4. 
+So, in the example above, we know what's the result of the calculations made on our secrets without revealing them to the coprocessor.
 
 ### Class 3:
 1. (Proving Part) There's a plugin on REMIX I can use the ZoKrates plugin on Remix for ZK stuff. Using it, we first compile, then setup (generates the toxic waste, which is not deleted because we don't have many people for a ceremony.), then I compute (this is the providing a witness), then I generate a proof.
@@ -156,6 +175,24 @@ Something that's encrypted is the execution trace of the program I'm trying to p
 ### Class 11
 1. One of the ways to ensure the trusted setup goes well and that no one will be able to "guess" the public parameters is that these parameters are something really hard to find out. For example, these parameters can be a public key whose private key has been destroyed.
 
+### Class ...
+#### Identity Solutions
+This is not something only applicable to web3. 
+1. Polygon ID is good use case
+2. Iden3 is also another good example.
+3. Semaphore is a proof of membership protocol that allows the creation of private DAOs, for example.
+4. In order to keep the confidentiality of identity and follow the GDPR rules, it's a good practice generally is to not store data. Generally, regulations are way behind technology.
+5. WORLD ID: they claim to make a proof that I am a real person and unique through biometrics and they also claim to not store anything of mine. But people seems to be skeptical about it. 
+6. Something someone commented about WORLD ID: "People were selling their world id's on the blackmarket because users don't have to verify their identities again after signup"
+7. `Clique` tries to link web2 O-Auth with the web3.
+8. `ZK-ML` is potentially interesting and potentially difficult.
+9. An amazing library for ZK-ML is EZKL, open-source with great community around.
+10. The proof time for halo2 for about 20 millions of input params is about 250s, whereas a large language model like CHATGPT is in the billions of parameters. So, we're far away.
+11. One of the devs at worldcoin is a good guy to follow when it comes to ZKML.
+12. There's a project winner of the Lisbon '23 hackathon that made a small change in the neural network common design in order to get rid of the weights in a Neural Network, therefore allowing for faster computation in ZKML. 
+13. ZKML is worried about performance issues right now.
+14. Arkworks is a library that has cool exercises for creation of SNARKs circuits, merkle trees, etc (with solutions).
+
 ### Resources:
 - https://github.com/matter-labs/awesome-zero-knowledge-proofs
 - https://l2beat.com/ provides a lot of information about various l2 solutions
@@ -180,4 +217,7 @@ another project from a guy from the bootcamp. It's a MINA sponsored project for 
 - David Wor, cryptographer that knows his stuff. Helps use MINA, etc.
 - https://vitalik.ca/general/2022/08/04/zkevm.html
 - https://www.rareskills.io/zk-book Generators/Groups
+- https://github.com/zkonduit/ezkl ZKML great library and active.
+- https://flock.io/#/ there's someone in the bootcamp working as a blockchain dev here (Elizabeth Lui)
+- https://tlsnotary.org/ Protocol similar to the DECO protocol.
 
