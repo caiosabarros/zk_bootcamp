@@ -4,7 +4,6 @@
 
 ### Class 1
 1. ZK proves that honest computation has been done.
-2. "ZK gives out a similar vibe as ML... It is a magic solution that fixes everything with no limit to its application"
 
 #### Group Theory
 3. Group im math is basically something that encapsulates all the results of any operation in between any elements of a specific set of elements. (Closure)
@@ -40,7 +39,7 @@ Bob - the verifier - then uses Alice's proof `p`, her public input `x` and also 
 If the verification returns true, Bob - and everyone now, if the system is public - knows that:
 Conclusion: Alice proved that given an input `x`, she knows the witness `w` that the program (circuit) computes.
 Example: Let's say that `x` is whether Alice's BTC balance is bigger than 10. Without revealing her public key, Alice can make a proof that given `x`, Alice's balance is bigger than 10. The verifier only needs to know `x` - and the keys pertaining to the circuit - to determine Alice's is not lying. Alice might give `w` as her public address, for example. 
-
+TODO: Find a more intuitive example
 8. Have a look at ZCash.
 9. From a classmate:
 For anyone who has trouble understanding non-interactive proofs, I can share my intuition. For every ZK Circuit (A.K.A. “proof”), you will have two sets of cryptographic keys: the prover key, and the verifier key. The prover key is used to generate the ZK proof, the verifier key is used to verify it. The proof represents “an observation of execution”. The verifier key verifies if that execution was done strictly accordingly to what the ZK Circuit (A.K.A. “zero-knowledge program/proof”) has defined.
@@ -56,6 +55,25 @@ Decryption: divide by 2.
 In coprocessor: 6 + 8 = 14.
 Decrypted data: 14/2 = 7 = 3 + 4. 
 So, in the example above, we know what's the result of the calculations made on our secrets without revealing them to the coprocessor.
+13. Homomorphic Hiding: it is the set of functions that have the following properties:
+- Given x and y, F(x) is different than F(y) is x is different than y. (It hasn't collisions).
+- Given F(x), it's hard to find x. (Just like hashing functions).
+- If F(x) = F(y), then x must equal y.
+- F(x+y) is computable from F(x) and F(y).
+Here's an example of how HH is useful for ZK proofs:
+- Alice wants to prove to Bob she knows x and y so that x + y = 3, without revealing either of them to Bob, ofc.
+- Alice then does the following:
+- She sends F(x) and F(y) to Bob. 
+- Bob computes F(x+y) from the last step since `F` is a HH function.
+- Bob computes F(3). 
+- Bob checks that F(x+y) = F(x).
+14. TODO: Find use cases for Zokrates protocol.
+15. Trusted Setup: ZKSnarks require a setup step to produce the `proving_k` and `vk`, the ones that will be used in the whole protocol to make the proofs and the verifications. It requires an amount of trust and if the details of te setup were leaked later, then whosoever have access to those will be able to create false proofs. Imagine someone proving falsely he's got 100 BTC. That's potentially harmful.
+16. An `arithemic circuit` seems to be like the `.zok` file in Zokrates. It's the thing that constrains the allowed inputs. For example, in `.zok`, the file constrains the inputs to hashes, or numbers, etc.
+17. TODO: Read Vitalik's early articles about ZKs. 
+18. "Remember the real input to the ZK SNARK process is the R1CS, and not the circuit itself, so your front-end should be able to use this trick to optimize the circuit before creating the proof." from an article [R1CS](https://coders-errand.com/constraint-systems-for-zk-snarks/)
+19. R1CS is more of a verifier: it shows that an already complete computation is correct.
+TODO: Learn what's R1CS intuitevely. 
 
 ### Class 3:
 1. (Proving Part) There's a plugin on REMIX I can use the ZoKrates plugin on Remix for ZK stuff. Using it, we first compile, then setup (generates the toxic waste, which is not deleted because we don't have many people for a ceremony.), then I compute (this is the providing a witness), then I generate a proof.
@@ -70,6 +88,15 @@ If I understand it right, the
 9. ATM, the sequencer for some L2s are centralized. They want to make it so that anyone can be a sequencer though.
 10. L-0 usually is a protocol concerned with L1s interoperability, like messaging in between L1 Ethereum and L1 Polygon, L1 Ethereum and L1 BSC, for example.
 11. TornadoCash is a protocol that breaks the link of account `from` and `to`. I can deposit it there into the contract and then withdraw from another account without anyone knowing the funds deposited by `from` where specifically withdrawn to `to`.
+12. We don't always need SNARKS or STARKs because other techniques might be more efficient for our use cases. They're both general purpose systems used for creating proofs. Other useful techniques: blind signatures, accumulators, pedersen commitment, sigma protocols.
+13. ZK rollups gas costs are significantly greater than optimistic rollups because generating a proof is computationally intensive, whereas in the optimistic rollup, there's a optimism about the batch txs sent and only when a `fraud proof` is required, there's more computation. The withdraw periods in the zk-rollups are very fast - just wait for the next batch, which may vary from different zkrollups implementations.
+For optimistic rollups, there's though an usual time waiting of 1 week
+since there needs to be time for someone to generate a `fraud proof` before the batch is actually inserted on the L1. The interesting thing though is that in a per-tx cost basis, zkrollups are cheaper.
+14. Optimistic rollups are designed so that someone can send a tx to L1 with a proof that some batch is incorrect so that the state changes can be reverted, however, in zkrollups, the batch already comes with a proof to the L1, which is quickly verified on L1, however great the computation to the proof made was.
+15. Also, ZKRollups use +- 12 bytes of data per tx sent, whereas txs on L1 take usually 110bytes. On L2's, for example, the user doesn't need a nonce, whereas on L1 he does. He doesn't need a nonce probably because a batch of txs are going to be sent to the L1, where the nonce is only needed in the batch tx, but not for the user that sent the tx on the L2, since only the state changes are going to be done on L1. This nonce thing is interesting though.
+TODO: search why there's no bytes of nonce on zkrollups.
+16. Filecoin is a big zkproject.
+TODO: At the end of lesson 3, there are cool projects I may look at again when studying ZKML.
 
 ### Class 4
 1. Cairo is only used by Starknet. Cairo is the language to write smart contracts for the L2 Starknet, where execution is concentrated on L2.
@@ -83,7 +110,8 @@ If I understand it right, the
 9. A security issue of L2s is that their messaging to the L1 is effective.
 10. There is a L1 Core Contract for L2s responsible for txs stuff.
 11. Cairo compiles to an intermidiate representation and then it compiles then again to a bytecode (proof). The flow is usually:
-Caio SC -> Sierro -> Cairo Assembly -> Validity Proof. 
+Caio SC -> Sierro -> Cairo Assembly -> Validity Proof.
+12. Starknet works as follows: users make txs and these txs are sent to a (yet-centralized) Sequencer. The Sequencer sends an execution trace to a the Prover, that creates a validity proof of the state diffs and send this to the Starknet Core contract on L1, which verifies the proof and keeps state diffs, so that if there's a rollback on the state due to an incorrect proof or incorrect tx, the state can be rolledbac 
 3. L2s can have a different language for execution. They just need to send down a layer a proof of the execution and that it was done correctly. So, Starknet, for example, uses Cairo as a language for its L2.
 #### Rust:
 1. Variables are immutable by default unless declared witht the `mut` keyword.
@@ -193,6 +221,18 @@ This is not something only applicable to web3.
 13. ZKML is worried about performance issues right now.
 14. Arkworks is a library that has cool exercises for creation of SNARKs circuits, merkle trees, etc (with solutions).
 
+### Class 16:
+1. Lots of resources are given because Laurence's classes have ended.
+2. Caulk: efficient proof of membership.
+3. Verkle Trees is much more short in memory when compared to Merkle Trees, making it much more efficient than Merkle Trees. The difference between them is basically that in a MT, I need all the data (nodes) in the same level that goes from the thing I want to prove is in the merkle tree. In VT, I only need the path to the root. 
+4. TODO: One area that I found to be promising and interesting is ZkML. Take a look at!
+5. A folding scheme is something like NOVA. TODO: found what it is. Recursion seems to be something relevant in folding schemes. TODO: Listen to podcasts on ZK from that ZK podcast - the link is on homework of lesson 15.
+6. Multiparty computation is related to finding a way to multiple provers create a proof - where each prover knows its own witness, but not the witness from other provers - and a verifier verifies the prover. (Collaborative SNARKs is this concept as well).
+7. RLN is like an ongoing trusted setup.
+8. Autonomous Worlds workshop from DEVCON is a must-watch.
+9. TODO: as I study cyber, identify what are the problems nowadays with revealing data - like my geocoordinates - and think whether zk can contribute to that in someway.
+
+
 ### Resources:
 - https://github.com/matter-labs/awesome-zero-knowledge-proofs
 - https://l2beat.com/ provides a lot of information about various l2 solutions
@@ -220,4 +260,7 @@ another project from a guy from the bootcamp. It's a MINA sponsored project for 
 - https://github.com/zkonduit/ezkl ZKML great library and active.
 - https://flock.io/#/ there's someone in the bootcamp working as a blockchain dev here (Elizabeth Lui)
 - https://tlsnotary.org/ Protocol similar to the DECO protocol.
-
+- https://github.com/hyperproofs/hyperproofs-go Verkle Tree library
+- https://extropy-io.medium.com/hackathon-tips-53b1d435b8b4 Article from Extropy Medium about tips for winning hackathons (the medium has good articles about other stuff to. TODO: take a look)
+- https://encodeclub.notion.site/ZK-Bootcamp-October-2023-0df9f9fa093847fe966a1d74d37e5690?pvs=4 hacker pack
+- O1 Lab’s channel on YouTube https://www.youtube.com/@o1labsofficial/videos
