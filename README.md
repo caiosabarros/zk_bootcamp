@@ -263,4 +263,12 @@ another project from a guy from the bootcamp. It's a MINA sponsored project for 
 - https://github.com/hyperproofs/hyperproofs-go Verkle Tree library
 - https://extropy-io.medium.com/hackathon-tips-53b1d435b8b4 Article from Extropy Medium about tips for winning hackathons (the medium has good articles about other stuff to. TODO: take a look)
 - https://encodeclub.notion.site/ZK-Bootcamp-October-2023-0df9f9fa093847fe966a1d74d37e5690?pvs=4 hacker pack
-- O1 Lab’s channel on YouTube https://www.youtube.com/@o1labsofficial/videos
+- O1 Lab’s channel on YouTube https://www.youtube.com/@o1labsofficial/video
+- one of them is from anca nitulescu: https://www.di.ens.fr/~nitulesc/files/Survey-SNARKs.pdf
+- Proofs, Arguments, and Zero-Knowledge
+Justin Thaler1 Book
+- https://www.youtube.com/watch?v=4M8_Oo7lpiA
+- YT channel: zkhackss
+- KYC in Mina is incredible. Etonec seems to be the name of the thing to search for. KYC is really the ultimate problem ZK apps can solve. I think.
+- Mina workshop: guy said: contracts don't need to be identity-aware, but they need to be proofable-aware, because we then might need to prove anything, including our identity.Mina does that.
+- https://o1-labs.github.io/proof-systems/introduction.html
