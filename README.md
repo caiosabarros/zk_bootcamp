@@ -272,3 +272,6 @@ Justin Thaler1 Book
 - KYC in Mina is incredible. Etonec seems to be the name of the thing to search for. KYC is really the ultimate problem ZK apps can solve. I think.
 - Mina workshop: guy said: contracts don't need to be identity-aware, but they need to be proofable-aware, because we then might need to prove anything, including our identity.Mina does that.
 - https://o1-labs.github.io/proof-systems/introduction.html
+
+WILD RESOURCE:
+https://www.notion.so/encodeclub/85393f2cf9d449e0a433ae62799c1fde?v=95eeea778a10438b82ec83fbafc3eed8
